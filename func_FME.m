@@ -5,9 +5,9 @@ vecesq = (3*30 + 3.5*6)*power(10,-3);
 vectcent = (30*1+ 3.5*2)*power(10,-3);
 x = 7*power(10,-3);
 y = 5*power(10,-3);
-corrent =1;
-permnucleo =2000;
-nespiras =300;
+corrent =8;
+permnucleo =2500;
+nespiras =250;
 argapesq = 0.07*power(10,-3); %m
 argpdir = 0.05*power(10,-3); %m
 
@@ -28,7 +28,7 @@ ni=nespiras*i;
 %calculo do total
 Rtotal = power((1/(Rdir+Rarpgdir)+1/(Resq+Rarpgesq)),-1)+Rcent
 
-fluxtotal = ni/Rtotal
+fluxtotal = ni/Rtotal;
 % Calculando fluxo direito
 fluxdir = (1/(Rarpgdir+Rdir)/((1/(Rarpgdir+Rdir))+(1/(Rarpgesq+Resq))))*fluxtotal;
 
